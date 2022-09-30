@@ -67,7 +67,6 @@ const TextInput = React.forwardRef(
             <button
               aria-label="Reveal Password"
               className={showPassword ? 'clicked' : ''}
-              data-testid="reveal-password-button"
               disabled={disabled}
               onClick={() => setShowPassword((prev) => !prev)}
             >

@@ -6,7 +6,6 @@ export const EyeIcon = () => (
     stroke="currentColor"
     width={22}
     height={22}
-    data-testid="eye-icon"
   >
     <circle
       cx="12"
@@ -46,7 +45,6 @@ export const AtSignIcon = () => (
     stroke="currentColor"
     width={20}
     height={20}
-    data-testid="at-sign-icon"
   >
     <path
       style={{
@@ -70,7 +68,6 @@ export const Tick = () => (
     stroke="currentColor"
     width={20}
     height={20}
-    data-testid="tick-icon"
   >
     <path
       style={{

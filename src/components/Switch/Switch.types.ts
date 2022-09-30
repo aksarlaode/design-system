@@ -3,6 +3,5 @@ export interface SwitchProps
   toggled?: boolean;
   label?: React.ReactNode;
   id: string;
-  ['data-testid']?: string;
   ['aria-label']: string;
 }

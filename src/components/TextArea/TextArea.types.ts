@@ -13,7 +13,6 @@ export interface TextAreaProps
   label?: React.ReactNode;
   value?: string;
   id: string;
-  ['data-testid']?: string;
   ['aria-label']: string;
   onChange?: React.FormEventHandler<HTMLTextAreaElement>;
   resize?: ResizeProperty;

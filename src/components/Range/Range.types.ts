@@ -5,7 +5,6 @@ export interface RangeProps
   > {
   id: string;
   label?: React.ReactNode;
-  ['data-testid']?: string;
   ['aria-label']: string;
   debounce?: number;
   onChange: (value: number) => unknown;
