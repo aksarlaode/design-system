@@ -1,11 +1,11 @@
 {
-  "name": "@laodeaksarr/design-system",
-  "version": "1.1.1",
+  "name": "@bahutara/design-system",
+  "version": "0.0.1",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
   "sideEffects": false,
-  "repository": "https://github.com/laodeaksarr/design-system",
+  "repository": "https://github.com/bahutara/design-system",
   "license": "MIT",
   "scripts": {
     "build": "node ./esbuild.build.js",
