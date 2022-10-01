@@ -1,5 +1,3 @@
-import merge from 'lodash/merge';
-
 import type { CSS } from 'src/lib/stitches.config';
 
 import Text from './TypographyText';
@@ -54,7 +52,8 @@ const Heading = (props: HeadingProps) => {
       {...rest}
       size={headingSize[size]}
       css={{
-        ...merge(headingCSS[size], props.css),
+        ...headingCSS[size],
+        ...props.css,
       }}
     />
   );
