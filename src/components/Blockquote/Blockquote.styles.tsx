@@ -46,7 +46,6 @@ export const StyledBlockquote = styled('blockquote', {
     '@lg': {
       top: 0,
     },
-
   },
 
   '.quotation': {

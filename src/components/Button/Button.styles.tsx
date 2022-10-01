@@ -120,13 +120,13 @@ export const StyledButton = styled('button', {
 
 export const StyledIconButton = styled('button', {
   $$color: 'var(--laodeaksar-colors-typeface-tertiary)',
-  $$corner: '$2',
-  $$background: 'var(--laodeaksar-colors-foreground)',
+  $$corner: '$radii$1',
+  $$background: 'transparent',
   $$shadow: 'none',
   $$thickness: '1px',
-  $$borderColor: 'transparent',
-  $$contentScale: 1,
-  $$backgroundScale: 1,
+  $$border_color: 'transparent',
+  $$content_scale: 1,
+  $$background_scale: 1,
 
   WebkitAppearance: 'none',
   WebkitTapHighlightColor: 'transparent',
@@ -141,11 +141,11 @@ export const StyledIconButton = styled('button', {
 
   /* Constant properties */
   size: '44px',
-  background: 'transparent',
+  background: '$$background',
   transition: 'color 0.3s ease, transform 0.3s ease',
-  borderRadius: '$1',
+  borderRadius: '$$corner',
   color: '$$color',
-  transform: 'scale($$contentScale) translateZ(0)',
+  transform: 'scale($$content_scale) translateZ(0)',
 
   $$primary: '0 2px 40px -4px var(--laodeaksar-form-input-focus)',
 
@@ -158,9 +158,9 @@ export const StyledIconButton = styled('button', {
     borderRadius: '$$corner',
     transition:
       'box-shadow 0.3s ease, border-color 0.2s, background 0.3s ease,\n      transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-    background: '$$background',
-    transform: 'scale(var(--button-background-scale, 1)) translateZ(0)',
-    border: '$$thickness solid $$borderColor',
+    $$background: 'var(--laodeaksar-colors-foreground)',
+    transform: 'scale(var($$background_scale)) translateZ(0)',
+    border: '$$thickness solid $$border_color',
     boxShadow: '$$shadow',
   },
 
@@ -172,25 +172,25 @@ export const StyledIconButton = styled('button', {
 
   '&:hover': {
     '&:not(:disabled)': {
-      $$borderColor: 'var(--laodeaksar-colors-brand)',
+      $$border_color: 'var(--laodeaksar-colors-brand)',
       $$thickness: '2px',
       $$color: 'var(--laodeaksar-colors-brand)',
-      $$corner: 'calc($space$2 + 2px)',
-      $$backgroundScale: '0.92',
+      $$corner: 'calc($$corner + 2px)',
+      $$background_scale: '0.92',
       $$shadow: '$$primary',
     },
   },
 
   '&:focus-visible': {
-    $$borderColor: 'var(--laodeaksar-colors-brand)',
+    $$border_color: 'var(--laodeaksar-colors-brand)',
     $$thickness: '2px',
     $$color: 'var(--laodeaksar-colors-brand)',
-    $$corner: 'calc($space$2 + 2px)',
-    $$backgroundScale: 0.92,
+    $$corner: 'calc($$corner + 2px)',
+    $$background_scale: 0.92,
     $$shadow: '$$primary',
   },
 
   '&:active': {
-    $$contentScale: '0.95',
+    $$content_scale: '0.95',
   },
 });
