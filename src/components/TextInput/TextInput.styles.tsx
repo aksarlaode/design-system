@@ -13,6 +13,7 @@ export const StyledInput = styled('input', {
   display: 'block',
   margin: 0,
   padding: '$$padding',
+  cursor: 'text',
 
   fontSize: '$2',
   fontFamily: 'inherit',
