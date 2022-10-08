@@ -1,4 +1,10 @@
-export type TextInputTypes = 'email' | 'password' | 'search' | 'text' | 'url';
+export type TextInputTypes =
+  | 'email'
+  | 'password'
+  | 'search'
+  | 'text'
+  | 'url'
+  | 'number';
 
 export interface TextInputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {

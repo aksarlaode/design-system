@@ -54,6 +54,7 @@ export const StyledInput = styled('input', {
       search: {},
       text: {},
       url: {},
+      number: {},
     },
   },
 });
@@ -180,6 +181,7 @@ export const StyledInputWrapper = styled('div', {
       search: {},
       text: {},
       url: {},
+      number: {},
     },
   },
 });
