@@ -18,7 +18,6 @@ export { default as List } from './components/List';
 export { default as Pill } from './components/Pill';
 export { default as Radio } from './components/Radio';
 export { default as Range } from './components/Range';
-export { default as Rangev2 } from './components/Rangev2';
 export { default as Spinner } from './components/Spinner';
 export { default as Switch } from './components/Switch';
 export { default as Tabs } from './components/Tabs';
