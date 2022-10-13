@@ -117,7 +117,7 @@ export const StyledAnchor = styled('a', {
         '--size': '1.1em',
         border: '1px solid currentColor',
         borderRadius: '$0',
-        margin: '$3',
+        padding: '$1',
 
         '&:before': {
           content: '""',
