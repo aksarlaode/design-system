@@ -35,11 +35,11 @@ export const Item = styled(AccordionPrimitive.Item, {
 
   '&:first-child': {
     marginTop: 0,
-    btr: 4,
+    borderTopRadius: 4,
   },
 
   '&:last-child': {
-    bbr: 4,
+    borderBottomRadius: 4,
   },
 
   '&:focus-within': {

@@ -1,4 +1,4 @@
-import { Prefixed } from '@stitches/react/types/util';
+import type { Prefixed } from '@stitches/react/types/util';
 
 import { config, type CSS } from '../stitches.config';
 

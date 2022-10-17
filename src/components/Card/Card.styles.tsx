@@ -38,7 +38,7 @@ export const CardHeader = styled('div', {
   alignItems: 'center',
   minHeight: '50px',
   padding: '0px 24px',
-  btr: '$1',
+  borderTopRadius: '$1',
   color: 'var(--laodeaksar-colors-typeface-tertiary)',
   fontWeight: '$3',
   fontSize: '$4',

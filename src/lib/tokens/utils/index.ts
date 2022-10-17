@@ -1,3 +1,5 @@
+import type * as Stitches from '@stitches/react';
+
 import backgroundUtils from './background';
 import borderUtils from './border';
 import marginUtils from './margin';
@@ -17,19 +19,19 @@ const utils = {
     top: value,
     bottom: value,
   }),
-  us: (value: any) => ({
+  us: (value: Stitches.PropertyValue<'userSelect'>) => ({
     WebkitUserSelect: value,
     MozUserSelect: value,
     MsUserSelect: value,
     userSelect: value,
   }),
-  appearance: (value: any) => ({
+  apperance: (value: Stitches.PropertyValue<'appearance'>) => ({
     WebkitAppearance: value,
     MozAppearance: 'none',
     appearance: value,
   }),
 
-  size: (value: any) => ({
+  size: (value: Stitches.PropertyValue<'width'>) => ({
     width: value,
     height: value,
   }),
