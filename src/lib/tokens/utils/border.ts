@@ -1,32 +1,26 @@
+import type * as Stitches from '@stitches/react';
+
+import { createUtil } from './create';
+
+type Radii = Stitches.PropertyValue<'borderRadius'>;
+
 const borderUtils = {
-  btrr: (value: any) => ({
-    borderTopRightRadius: value,
-  }),
-  bbrr: (value: any) => ({
-    borderBottomRightRadius: value,
-  }),
-  bblr: (value: any) => ({
-    borderBottomLeftRadius: value,
-  }),
-  btlr: (value: any) => ({
-    borderTopLeftRadius: value,
-  }),
-  btr: (value: any) => ({
-    borderTopLeftRadius: value,
-    borderTopRightRadius: value,
-  }),
-  brr: (value: any) => ({
-    borderTopRightRadius: value,
-    borderBottomRightRadius: value,
-  }),
-  bbr: (value: any) => ({
-    borderBottomRightRadius: value,
-    borderBottomLeftRadius: value,
-  }),
-  blr: (value: any) => ({
-    borderTopLeftRadius: value,
-    borderBottomLeftRadius: value,
-  }),
+  borderTopRadius: createUtil<Radii>([
+    'borderTopLeftRadius',
+    'borderTopRightRadius',
+  ]),
+  borderBottomRadius: createUtil<Radii>([
+    'borderBottomLeftRadius',
+    'borderBottomRightRadius',
+  ]),
+  borderLeftRadius: createUtil<Radii>([
+    'borderBottomLeftRadius',
+    'borderTopLeftRadius',
+  ]),
+  borderRightRadius: createUtil<Radii>([
+    'borderBottomRightRadius',
+    'borderTopRightRadius',
+  ]),
 };
 
 export default borderUtils;

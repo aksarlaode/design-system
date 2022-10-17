@@ -554,10 +554,10 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@stitches/react@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
-  integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
+"@stitches/react@^1.3.1-0":
+  version "1.3.1-0"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.3.1-0.tgz#c93357175c9d7b076044a5f8c602d5aa48761bbe"
+  integrity sha512-DMP1MEvxn+anIJcpkkYXfIN28zngmGwNjCQLTv3hLnYopNcaNmKPg4qpEFky7gYp7fbyC3JDCu/kJsC+Nr0Mtg==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"

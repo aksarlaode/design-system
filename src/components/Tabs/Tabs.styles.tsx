@@ -26,11 +26,11 @@ export const Trigger = styled(TabsPrimitive.Trigger, {
   userSelect: 'none',
 
   '&:first-child': {
-    btlr: 6,
+    borderTopLeftRadius: 6,
   },
 
   '&:last-child': {
-    btrr: 6,
+    borderTopRightRadius: 6,
   },
 
   '&:hover': {
