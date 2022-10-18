@@ -18,6 +18,17 @@ const DialogContent = React.forwardRef(
           <Styled.Title>{title}</Styled.Title>
           <Styled.Description>{description}</Styled.Description>
           {children}
+          <DialogPrimitive.Close asChild>
+            <Button
+              css={{
+                position: 'absolute',
+                top: 10,
+                right: 10,
+              }}
+              variant="icon"
+              icon={<Icon.X />}
+            />
+          </DialogPrimitive.Close>
         </Styled.Content>
       </DialogPrimitive.Portal>
     );
