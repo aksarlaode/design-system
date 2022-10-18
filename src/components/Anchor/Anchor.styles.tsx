@@ -115,7 +115,7 @@ export const StyledAnchor = styled('a', {
     hastag: {
       true: {
         '--size': '1.1em',
-        border: '1px solid currentColor',
+        border: '2px solid currentColor',
         borderRadius: '$0',
         padding: '$1',
 
