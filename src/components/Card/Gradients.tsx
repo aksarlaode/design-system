@@ -23,7 +23,10 @@ export const Gradients = ({ children }: React.PropsWithChildren) => (
   <Card
     css={{
       my: '150px',
-      linearGradient: '135deg, rgb(88 154 253) rgb(188 236 255)',
+      backgroundImage: `linear-gradient(
+        135deg, 
+        rgb(88 154 253) rgb(188 236 255)
+      )`,
       maxWidth: '250px',
       height: '250px',
       position: 'relative',
@@ -49,7 +52,11 @@ export const Gradients = ({ children }: React.PropsWithChildren) => (
     >
       <Box
         css={{
-          linearGradient: '135deg, rgb(88 154 253) 35%, rgb(188 236 255) 65%',
+          backgroundImage: `linear-gradient(
+            135deg,
+            rgb(88 154 253) 35%,
+            rgb(188 236 255) 65%
+          )`,
           transform: 'scale(1.5, 3)',
           size: '110%',
           left: '-10px',

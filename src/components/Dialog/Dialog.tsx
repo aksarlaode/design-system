@@ -19,7 +19,15 @@ const DialogContent = React.forwardRef(
           <Styled.Description>{description}</Styled.Description>
           {children}
           <DialogPrimitive.Close asChild>
-            <Button variant="icon" icon={<Icon.X />} />
+            <Button
+              css={{
+                position: 'absolute',
+                top: 10,
+                right: 10,
+              }}
+              variant="icon"
+              icon={<Icon.X />}
+            />
           </DialogPrimitive.Close>
         </Styled.Content>
       </DialogPrimitive.Portal>
@@ -37,6 +45,7 @@ const Dialog = (props: TDialog.Props) => {
 
 Dialog.Content = DialogContent;
 Dialog.Trigger = DialogPrimitive.Trigger;
+Dialog.Close = DialogPrimitive.Close;
 Dialog.displayName = 'Dialog';
 
 export default Dialog;

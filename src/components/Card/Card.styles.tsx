@@ -55,7 +55,10 @@ export const CardBody = styled('div', {
   variants: {
     dotMatrix: {
       true: {
-        radialGradient: 'var(--laodeaksar-border-color) 1px, transparent 0',
+        backgroundImage: `radial-gradient(
+          var(--laodeaksar-border-color) 1px, 
+          transparent 0
+        )`,
         backgroundPosition: '50% center',
         backgroundSize: '10px 10px',
       },
