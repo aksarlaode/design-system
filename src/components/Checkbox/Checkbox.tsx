@@ -1,3 +1,4 @@
+import Flex from '../Flex';
 import Label from '../Label';
 
 import { StyledCheckbox, StyledWrapper } from './Checkbox.styles';
@@ -7,7 +8,7 @@ const Checkbox = (props: CheckboxProps) => {
   const { checked, disabled, id, label, ...rest } = props;
 
   return (
-    <StyledWrapper>
+    <Flex gap={2}>
       <StyledCheckbox
         id={id}
         type="checkbox"
@@ -18,7 +19,7 @@ const Checkbox = (props: CheckboxProps) => {
         {...rest}
       />
       {label && <Label htmlFor={id}>{label}</Label>}
-    </StyledWrapper>
+    </Flex>
   );
 };
 
