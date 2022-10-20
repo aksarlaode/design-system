@@ -1,7 +1,7 @@
 import Flex from '../Flex';
 import Label from '../Label';
 
-import { StyledCheckbox, StyledWrapper } from './Checkbox.styles';
+import { StyledCheckbox } from './Checkbox.styles';
 import type { CheckboxProps } from './Checkbox.types';
 
 const Checkbox = (props: CheckboxProps) => {
