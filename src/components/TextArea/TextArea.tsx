@@ -19,7 +19,7 @@ const TextArea = React.forwardRef(
     } = props;
 
     return (
-      <fieldset>
+      <div>
         {label && (
           <Label
             htmlFor={id}
@@ -40,7 +40,7 @@ const TextArea = React.forwardRef(
           ref={ref}
           {...rest}
         />
-      </fieldset>
+      </div>
     );
   }
 );

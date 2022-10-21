@@ -60,7 +60,7 @@ export const StyledInput = styled('input', {
   },
 });
 
-export const StyledInputWrapper = styled('fieldset', {
+export const StyledInputWrapper = styled('div', {
   $$stroke: 'var(--laodeaksar-form-input-border)',
   $$shadow: 'none',
 

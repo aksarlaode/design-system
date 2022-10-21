@@ -87,8 +87,3 @@ export const StyledCheckbox = styled('input', {
     $$shadow: '$$primary',
   },
 });
-
-export const StyledWrapper = styled('fieldset', {
-  display: 'flex',
-  gap: '$2',
-});
