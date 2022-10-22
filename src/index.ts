@@ -10,6 +10,7 @@ export { default as Card, Gradients } from './components/Card';
 export { default as Checkbox } from './components/Checkbox';
 export { default as Dialog } from './components/Dialog';
 export { default as Flex } from './components/Flex';
+export * from './components/FormControl';
 export { default as Grid } from './components/Grid';
 export { default as Icon, type IconProps, StyledSVG } from './components/Icon';
 export { default as InlineCode } from './components/InlineCode';
