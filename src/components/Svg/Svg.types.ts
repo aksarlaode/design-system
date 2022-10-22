@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react';
-import type { CSS } from 'src/lib/stitches.config';
+import type { CSS } from '../../lib/stitches.config';
 import { DEFAULT_TAG } from './Svg.constants';
 import type { SvgVariants } from './Svg.styles';
 
