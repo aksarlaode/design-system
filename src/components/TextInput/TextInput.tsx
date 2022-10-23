@@ -1,24 +1,26 @@
 import React from 'react';
 
 import Box from 'src/components/Box';
-import Label from 'src/components/Label';
+import Label, { LabelOptional } from 'src/components/Label';
 
 import { AtSignIcon, EyeIcon, Tick } from './TextInputIcons';
 import { StyledInput, StyledInputWrapper } from './TextInput.styles';
 import type { TextInputProps } from './TextInput.types';
 import { validateEmail } from './utils';
+import { useFormControl } from '../FormControl';
 
 const TextInput = React.forwardRef(
   (props: TextInputProps, ref: React.ForwardedRef<HTMLInputElement>) => {
     const {
-      id,
-      disabled,
+      //id,
+      //disabled,
       label,
       type = 'text',
-      placeholder,
+      //placeholder,
       value,
-      ...rest
+      onValueChange,
     } = props;
+    const [id, { disabled, required }, rest] = useFormControl(props);
 
     const [showPassword, setShowPassword] = React.useState(false);
     const isValid = React.useMemo(() => validateEmail(value || ''), [value]);
@@ -41,6 +43,7 @@ const TextInput = React.forwardRef(
             }}
           >
             {label}
+            {required === false && <LabelOptional />}
           </Label>
         )}
         <Box css={{ position: 'relative' }}>
@@ -48,11 +51,15 @@ const TextInput = React.forwardRef(
             id={id}
             className={isValid ? 'valid' : ''}
             disabled={disabled}
+            required={required}
             // TODO cleanup variants: variants != types
             variant={computedType()}
             type={computedType()}
-            placeholder={placeholder}
+            /*placeholder={placeholder}*/
             value={value}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              onValueChange && onValueChange(e.target.value)
+            }
             ref={ref}
             {...rest}
           />

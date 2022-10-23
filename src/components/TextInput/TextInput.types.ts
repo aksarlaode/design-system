@@ -11,7 +11,17 @@ export interface TextInputProps
   type?: TextInputTypes;
   label?: React.ReactNode;
   value?: string;
-  id: string;
+  //id: string;
   ['aria-label']: string;
-  onChange?: React.FormEventHandler<HTMLInputElement>;
+  //onChange?: React.FormEventHandler<HTMLInputElement>;
+  onValueChange?: (value: string) => void;
+  enterKeyHint?:
+    | 'enter'
+    | 'done'
+    | 'go'
+    | 'next'
+    | 'previous'
+    | 'search'
+    | 'send'
+    | undefined;
 }
