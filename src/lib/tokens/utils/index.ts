@@ -25,6 +25,11 @@ const utils = {
     MsUserSelect: value,
     userSelect: value,
   }),
+  dflex: (value: Stitches.PropertyValue<'alignItems'>) => ({
+    display: 'flex',
+    alignItems: value,
+    justifyContent: value,
+  }),
   apperance: (value: Stitches.PropertyValue<'appearance'>) => ({
     WebkitAppearance: value,
     MozAppearance: 'none',

@@ -16,6 +16,7 @@ export { default as Icon, type IconProps, StyledSVG } from './components/Icon';
 export { default as InlineCode } from './components/InlineCode';
 export { default as Label } from './components/Label';
 export { default as List } from './components/List';
+export { default as Loading } from './components/Loading';
 export { default as Pill } from './components/Pill';
 export { default as Radio } from './components/Radio';
 export { default as Range } from './components/Range';
